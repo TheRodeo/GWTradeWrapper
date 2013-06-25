@@ -18,29 +18,20 @@ public class GWTradeWrapper {
 			BufferedReader bf = new BufferedReader(new InputStreamReader(
 					getConnection(url).getInputStream()));
 			return bf.readLine();
-		} catch (IOException e) {
-			throw new GWTradeException("Item not found: " + id, e);
+		} catch (IOException ioe) {
+			throw new GWTradeException("Could not find item: " + id, ioe);
 		}
 	}
 
-	private static URL buildAPIURL(String id) throws GWTradeException {
+	private static URL buildAPIURL(String id) throws MalformedURLException {
 		StringBuilder bldr = new StringBuilder(BASE_URL);
 		bldr.append(id);
-		try {
-			return new URL(bldr.toString());
-		} catch (MalformedURLException e) {
-			throw new GWTradeException("Bad URL: " + bldr.toString(), e);
-		}
+		return new URL(bldr.toString());
 	}
 
-	private static HttpURLConnection getConnection(URL url)
-			throws GWTradeException {
-		try {
-			HttpURLConnection con = (HttpURLConnection) url.openConnection();
-			con.setRequestProperty("User-Agent", USER_AGENT);
-			return con;
-		} catch (IOException e) {
-			throw new GWTradeException(e);
-		}
+	private static HttpURLConnection getConnection(URL url) throws IOException {
+		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+		con.setRequestProperty("User-Agent", USER_AGENT);
+		return con;
 	}
 }
