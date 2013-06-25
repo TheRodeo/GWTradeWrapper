@@ -1,4 +1,4 @@
-package de.chemist.gw;
+package de.chemist.gw2;
 
 @SuppressWarnings("serial")
 public class GWTradeException extends Exception {

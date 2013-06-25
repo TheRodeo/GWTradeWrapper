@@ -1,4 +1,4 @@
-package de.chemist.gw;
+package de.chemist.gw2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
