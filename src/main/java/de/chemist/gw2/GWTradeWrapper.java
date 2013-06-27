@@ -1,4 +1,7 @@
 /*
+ * gwtradeWrapper - A simple Wrapper for the Guild Wars 2 guildwarstrade.com API.
+ * Copyright 2013 Maximilian Werling
+ * 
  * This file is part of GWTradeWrapper.
  *
  * GWTradeWrapper is free software: you can redistribute it and/or modify
@@ -36,10 +39,10 @@ public class GWTradeWrapper {
 	 * Returns item information for a given ID.
 	 * 
 	 * @param itemId
-	 *            id of the item you want the information for.
+	 *            ID of the item you want the information for.
 	 * @return String in JSON format.
 	 * @throws GWTradeException
-	 *             if no item was found with the given id.
+	 *             if no item was found with the given ID.
 	 */
 	public static String getItemInformation(int itemId) throws GWTradeException {
 		try {

@@ -12,7 +12,7 @@ import org.junit.Test;
 public class GWTradeWrapperTest {
 
 	@Test
-	public void testGetItemInformationForRightID() {
+	public void getItemInformationTest() {
 		int itemId = 1234;
 		try {
 			String result = GWTradeWrapper.getItemInformation(itemId);

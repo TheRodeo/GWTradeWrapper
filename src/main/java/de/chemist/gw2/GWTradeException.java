@@ -1,4 +1,7 @@
 /*
+ * gwtradeWrapper - A simple Wrapper for the Guild Wars 2 guildwarstrade.com API.
+ * Copyright 2013 Maximilian Werling
+ * 
  * This file is part of GWTradeWrapper.
  *
  * GWTradeWrapper is free software: you can redistribute it and/or modify
