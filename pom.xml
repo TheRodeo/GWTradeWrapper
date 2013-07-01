@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.chemist.gw2</groupId>
-	<artifactId>GWTradeWrapper</artifactId>
+	<artifactId>gwtradeWrapper</artifactId>
 	<version>1.0</version>
-	<name>GWTradeWrapper</name>
+	<name>gwTradeWrapper</name>
 	<description>A simple Java Wrapper for the Guild Wars 2 guildwarstrade.com API</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

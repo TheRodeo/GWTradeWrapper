@@ -1,5 +1,6 @@
 gwtradeWrapper
 ===============
+Grab the .jar here: https://www.dropbox.com/s/iuj1olfj0q2rlyk/gwtradeWrapper-1.0.jar
 
 What is it?
 ===========
